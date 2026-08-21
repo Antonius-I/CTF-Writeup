@@ -59,7 +59,7 @@ From this I gathered a few initial facts:
 
 ### 3. Choosing a Visualization Tool: PCBWay Online Gerber Viewer
 
-Instead of installing a full PCB CAD suite (a full KiCad install, Altium, etc.) purely for visual inspection, I decided to use the free **PCBWay Online Gerber Viewer** service (`pcbway.com/project/OnlineGerberViewer.html`). This tool accepts a Gerber folder/archive directly and renders the entire layer stack (copper, soldermask, silkscreen, solderpaste, inner layers) into a single interactive board view right in the browser — complete with per-layer show/hide toggles and a 3D Viewer option.
+Instead of installing a full PCB CAD suite (a full KiCad install, Altium, etc.) purely for visual inspection, I decided to use the free **PCBWay Online Gerber Viewer** service (`pcbway.com/project/OnlineGerberViewer.html`). This tool accepts a Gerber folder/archive directly and renders the entire layer stack (copper, soldermask, silkscreen, solderpaste, inner layers) into a single interactive board view right in the browser, complete with per-layer show/hide toggles and a 3D Viewer option.
 
 I uploaded the `flight_control_board` folder directly into the tool. The panel on the left automatically detected and listed every layer according to the `TF.FileFunction` I had read earlier, grouped into three sections:
 
@@ -70,8 +70,6 @@ I uploaded the `flight_control_board` folder directly into the tool. The panel o
 This layout is consistent with the 4-layer structure I had already inferred from the file listing in the previous step.
 
 [IMAGE: initial view of PCBWay OnlineGerberViewer right after uploading the gerber folder — remove after replacing]
-
----
 
 ## Analysis Stage 1 — Reviewing the Top Side via PCBWay Gerber Viewer
 
