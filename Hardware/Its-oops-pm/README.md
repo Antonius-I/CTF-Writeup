@@ -1,4 +1,4 @@
-# HackTheBox Writeup: It's Oops PM (Hardware)
+# It's Oops PM 
 
 ## Introduction
 
@@ -12,11 +12,11 @@ I started by downloading the scenario files provided through the **Scenario File
 
 ```
 hardware_its_oops_pm/
-├── key.vhdl
-├── encryption.vhdl
-├── tpm.vhdl
-├── backdoor.vhdl
-└── schematic.png
+ key.vhdl
+ encryption.vhdl
+ tpm.vhdl
+ backdoor.vhdl
+ schematic.png
 ```
 
 I also obtained the address and port needed to connect to the satellite via the **Spawn Docker** button:
@@ -31,17 +31,17 @@ nc 154.57.164.82 31184
 
 Before diving into the VHDL code line by line, I first looked at the block diagram in `schematic.png` to get a general understanding of the data flow.
 
-![schematic](images/schematic.png)
+<img src="images/schematic.png" width="300">
 
 The diagram shows four main blocks:
 
-- **Input** — receives the incoming data
-- **Key** — generates the internal key
-- **Crypto** — encrypts the data using the key
-- **Logic** — processes the input to produce a control signal
-- **Mux** — selects the final output based on the signal from the Logic block, choosing between the encrypted data or an alternate path
+- **Input** : receives the incoming data
+- **Key** : generates the internal key
+- **Crypto** : encrypts the data using the key
+- **Logic** : processes the input to produce a control signal
+- **Mux** : selects the final output based on the signal from the Logic block, choosing between the encrypted data or an alternate path
 
-This pattern hints at a possible alternate (bypass) path on the final output, controlled by the Logic block — this is what I needed to trace further in the VHDL source.
+This pattern hints at a possible alternate (bypass) path on the final output, controlled by the Logic block. This is what we needed to trace further in the VHDL source.
 
 ## VHDL Source Analysis
 
@@ -100,8 +100,8 @@ end Behavioral;
 
 This `tpm` module ties all the previous components together. The logic is clear:
 
-- If `B = '1'` (backdoor triggered) → **Output = Key** (the raw internal key is output, bypassing encryption entirely)
-- If `B = '0'` (normal condition) → Output = Encrypted (properly encrypted data, as intended)
+- If B = 1 (backdoor triggered) | Output = Key (the raw internal key is output, bypassing encryption entirely)
+- If B = 0 (normal condition) | Output = Encrypted (properly encrypted data, as intended)
 
 
 ## Identifying the Backdoor
