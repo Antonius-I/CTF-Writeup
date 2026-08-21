@@ -8,7 +8,7 @@ One thing I enjoy about the *Hardware* category on HackTheBox is that the "sourc
 
 In short: a team used an open-source flight controller design as a base to speed up production, but someone had inserted something into the production files before the PCB was sent to the fab house. My task was to dissect the given Gerber files, look for anomalies, and ultimately locate the flag hidden within them.
 
-![](images/Description.png)
+![](images/description.png)
 
 ## Preparation
 
