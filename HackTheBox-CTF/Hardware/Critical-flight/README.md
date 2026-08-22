@@ -59,11 +59,8 @@ From this I gathered a few initial facts:
 
 ### 3. Choosing a Visualization Tool: PCBWay Online Gerber Viewer
 
-<<<<<<< HEAD
 Instead of installing a full PCB CAD suite (a full KiCad install, Altium, etc.) purely for visual inspection, I decided to use the free **PCBWay Online Gerber Viewer** service (`pcbway.com/project/OnlineGerberViewer.html`). This tool accepts a Gerber folder/archive directly and renders the entire layer stack (copper, soldermask, silkscreen, solderpaste, inner layers) into a single interactive board view right in the browser. Complete with per-layer show/hide toggles and a 3D Viewer option.
-=======
-Instead of installing a full PCB CAD suite (a full KiCad install, Altium, etc.) purely for visual inspection, I decided to use the free **PCBWay Online Gerber Viewer** service (`pcbway.com/project/OnlineGerberViewer.html`). This tool accepts a Gerber folder/archive directly and renders the entire layer stack (copper, soldermask, silkscreen, solderpaste, inner layers) into a single interactive board view right in the browser, complete with per-layer show/hide toggles and a 3D Viewer option.
->>>>>>> 9160d3c190e8f57f07412499ceb87c4452273a25
+
 
 I uploaded the `flight_control_board` folder directly into the tool. The panel on the left automatically detected and listed every layer according to the `TF.FileFunction` I had read earlier, grouped into three sections:
 
@@ -75,13 +72,9 @@ This layout is consistent with the 4-layer structure I had already inferred from
 
 <img src="images/gerber.png" width="300">
 
-<<<<<<< HEAD
 ---
 
 ## Reviewing the Top Side via PCBWay Gerber Viewer
-=======
-## Analysis Stage 1 — Reviewing the Top Side via PCBWay Gerber Viewer
->>>>>>> 9160d3c190e8f57f07412499ceb87c4452273a25
 
 With the **top** tab active and all top-side layers (copper, soldermask, silkscreen) displayed together, the PCBWay Gerber Viewer rendered the **HadesMicro** board complete with every component's *reference designator* something far more informative than a manual render, since the component labels (U1, R1, C1, etc.) are printed exactly where they sit on the actual Fab/Silkscreen layer.
 
