@@ -22,4 +22,4 @@ These writeups are for educational purposes only, documenting solved challenges 
 
 Feel free to explore the category folders for detailed writeups. More will be added as new challenges are solved.
 
-Will keep updating this... as long as we not being lazy. 😅
+Will keep updating this... as long as we are not being lazy. 😅
