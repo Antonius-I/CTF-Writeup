@@ -57,11 +57,11 @@ Because there are **100 consecutive grids** and the socket connection will time 
 
 This is a classic **Minimum Path Sum** problem on a 2D grid, which can be solved efficiently using **Dynamic Programming (DP)**.
 
-Resources to learn DP (Thanks to all of this creator <3):
-https://www.youtube.com/playlist?list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO (Playlist By NeetCode)
-https://www.youtube.com/watch?v=oBt53YbR9Kk (Video By freeCodeCamp.org - Alvin Zablan from Coderbyte)
-https://www.geeksforgeeks.org/category/dsa/algorithm/dynamic-programming/
-https://neetcode.io/roadmap (DP Route)
+Resources to learn DP (Thanks to all of these creators <3):
+- [NeetCode DP Playlist](https://www.youtube.com/playlist?list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHINO) (Playlist By NeetCode)
+- [freeCodeCamp DP Course](https://www.youtube.com/watch?v=oBt53YbR9Kk) (Video By freeCodeCamp.org - Alvin Zablan from Coderbyte)
+- [GeeksforGeeks DP Algorithms](https://www.geeksforgeeks.org/category/dsa/algorithm/dynamic-programming/)
+- [NeetCode Roadmap](https://neetcode.io/roadmap) (DP Route)
 
 ---
 
