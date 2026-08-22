@@ -8,7 +8,7 @@ One thing I enjoy about the *Hardware* category on HackTheBox is that the "sourc
 
 In short: a team used an open-source flight controller design as a base to speed up production, but someone had inserted something into the production files before the PCB was sent to the fab house. My task was to dissect the given Gerber files, look for anomalies, and ultimately locate the flag hidden within them.
 
-![](images/description.png)
+<img src="images/description.png" width="300">
 
 ## Preparation
 
@@ -35,7 +35,7 @@ flight_control_board/
 
 Just from this file naming scheme, it's already clear that the board named **HadesMicro** is a **4-layer PCB** (Top, In1, In2, Bottom), and fairly common for a small ("micro") flight controller that needs a lot of routing for the MCU, IMU sensor, and motor/ESC connectors within a tight footprint.
 
-![](images/UnzipResult.png)
+<img src="images/UnzipResult.png" width="300">
 
 ### 2. Reading Metadata Inside the Gerber Files
 
