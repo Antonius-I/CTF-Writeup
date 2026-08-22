@@ -1,10 +1,10 @@
 # CTF-Writeup
 
-A personal collection of CTF (Capture The Flag) writeups documenting challenges I've solved across various CTF competitions and platforms.
+A personal collection of CTF (Capture The Flag) writeups documenting challenges We've solved across various CTF competitions and platforms.
 
 ##  About This Collection
 
-This repository is a personal archive of writeups from CTFs I've participated in from various platforms and competitions, not tied to any single source. New writeups are added here as I solve new challenges.
+This repository is a personal archive of writeups from CTFs We've participated in from various platforms and competitions, not tied to any single source. New writeups are added here as We solve new challenges.
 
 ##  Format
 
@@ -22,4 +22,4 @@ These writeups are for educational purposes only, documenting solved challenges 
 
 Feel free to explore the category folders for detailed writeups. More will be added as new challenges are solved.
 
-Will keep updating this... as long as I'm not being lazy. 😅
+Will keep updating this... as long as we not being lazy. 😅
